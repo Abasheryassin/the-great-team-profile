@@ -1,5 +1,27 @@
 {
+  "name": "the-great-team-profile",
+  "version": "1.0.0",
+  "description": "Team profile builder",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abasheryassin/the-great-team-profile.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abasheryassin/the-great-team-profile/issues"
+  },
+  "homepage": "https://github.com/Abasheryassin/the-great-team-profile#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "inquirer": "^9.1.4",
+    "jest": "^29.3.1"
   }
 }
