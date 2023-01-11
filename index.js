@@ -25,8 +25,8 @@ function addEmployee() {
             //write code here
             addEngineer();
         } else {
-            //write code here
-            return
+            createHTML();
+            return;
         }
     })
 }
@@ -36,7 +36,21 @@ function addIntern() {
     inquirer
     .prompt(internQuestions)
     .then((response) => {
-        console.log(response);
+        let {name, id, email, school} = response;
+
+        let intern = new Intern(name, id, email, school);
+
+        let profile = `<div class="col-4">
+        <div class="p-3 border bg-light">
+         <h1>${intern.name}</h1>
+         <h2>${intern.getRole()}</h2>
+         <p>ID: ${intern.id}</p>
+         <p>Email: <a href="${intern.email}">${intern.email}</a></p>
+         <p>School: ${intern.school}</p>
+        </div>
+       </div>`;
+
+       addedProfiles += profile;
         addEmployee();
     });
 }
@@ -46,9 +60,28 @@ function addEngineer() {
     inquirer
     .prompt(engineerQuestions)
     .then((response) => {
-        console.log(response);
+        let {name, id, email, github} = response;
+
+        let engineer = new Engineer(name, id, email, github);
+
+        let profile = `<div class="col-4">
+        <div class="p-3 border bg-light">
+         <h1>${engineer.name}</h1>
+         <h2>${engineer.getRole()}</h2>
+         <p>ID: ${engineer.id}</p>
+         <p>Email: <a href="${engineer.email}">${engineer.email}</a></p>
+         <p>Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+        </div>
+       </div>`;
+
+       addedProfiles += profile;
         addEmployee();
     });
+}
+
+function createHTML() {
+    let finalHTML = htmlStart + addedProfiles + htmlEnd;
+    
 }
 
 //Initalizes the program asks for manager information
@@ -71,7 +104,6 @@ function init(){
        </div>`;
 
        addedProfiles += profile;
-        console.log(addedProfiles);
         addEmployee();
     });
 }
