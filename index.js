@@ -45,7 +45,7 @@ function addIntern() {
          <h1>${intern.name}</h1>
          <h2>${intern.getRole()}</h2>
          <p>ID: ${intern.id}</p>
-         <p>Email: <a href="${intern.email}">${intern.email}</a></p>
+         <p>Email: <a  href="mailto:${intern.email}">${intern.email}</a></p>
          <p>School: ${intern.school}</p>
         </div>
        </div>`;
@@ -69,8 +69,8 @@ function addEngineer() {
          <h1>${engineer.name}</h1>
          <h2>${engineer.getRole()}</h2>
          <p>ID: ${engineer.id}</p>
-         <p>Email: <a href="${engineer.email}">${engineer.email}</a></p>
-         <p>Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+         <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+         <p>Github: <a href="https://github.com/${engineer.github}" target= "_blank">${engineer.github}</a></p>
         </div>
        </div>`;
 
@@ -99,7 +99,7 @@ function init() {
          <h1>${manager.name}</h1>
          <h2>${manager.getRole()}</h2>
          <p>ID: ${manager.id}</p>
-         <p>Email: <a href="${manager.email}">${manager.email}</a></p>
+         <p>Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
          <p>Office Number: ${manager.officeNumber}</p>
         </div>
        </div>`;

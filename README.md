@@ -1,14 +1,17 @@
-# the-great-team-profile
-GIVEN a command-line application that accepts user input
+# THE GREAT TEAM BUILDER
 
-WHEN I am prompted for my team members and their information
-THEN an HTML file is generated that displays a nicely formatted team roster based on user input
+## Description
 
-WHEN I click on an email address in the HTML
-THEN my default email program opens and populates the TO field of the email with the address
+Keeping track of your team and their various information and be a hassle. This project attempts to streamline the building of a team portfolio filled with all the necessary information. During this project I learned how to save a user's input and render the information out later, even dividing the data into subcategories.
 
-WHEN I click on the GitHub username
-THEN that GitHub profile opens in a new tab
+## Installation
 
-WHEN I decide to finish building my team
-THEN I exit the application, and the HTML is generated
+Just download the repository and type in node index.js to run the program. Following that, a series of prompts will appear, fill in the necessary information and finalize your team.
+
+## Usage
+
+![alt text](assets/Team%20Profiler.png)
+
+## License
+
+This project uses an MIT license.
