@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const {managerQuestions, internQuestions, engineerQuestions} = require("./src/questions");
+const {htmlStart, htmlEnd} = require("./src/html");
 
 //ask manager to build thier team
 function addEmployee() {
