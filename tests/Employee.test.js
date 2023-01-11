@@ -1,12 +1,12 @@
-const Employee = require('../lib/Employee');
+const Employee = require("../lib/Employee");
 
 describe("Creates employee profile", () => {
     it("Recives user input for name and saves it", () => {
         //arrange
         const input = "chris";
-
+        const employee = new Employee(input);
         //act
-        const output = Employee.getName(input);
+        const output = employee.getName();
         
         //assert
         expect(output).toBe(input);
@@ -14,9 +14,9 @@ describe("Creates employee profile", () => {
     it("Recvies user input for id and saves it", () => {
         //arrange
         const input = "047";
-
+        const employee = new Employee("",input);
         //act
-        const output = Employee.getId(input);
+        const output = employee.getId();
 
         //assert
         expect(output).toBe(input);
@@ -24,18 +24,19 @@ describe("Creates employee profile", () => {
     it("Recives user input for email and saves it", () => {
         //arrange
         const input = "somename@gmail.com";
-
+        const employee = new Employee("","", input);
         //act
-        const output = Employee.getEmail(input);
+        const output = employee.getEmail();
 
         //assert
         expect(output).toBe(input);
     });
     it("Reutrns employee status", () => {
         //arrange
-        const expected = "employee";
+        const expected = "Employee";
+        const employee = new Employee;
         //act
-        const output = Employee.getRole();
+        const output = employee.getRole();
         //assert
         expect(output).toBe(expected);
     })
