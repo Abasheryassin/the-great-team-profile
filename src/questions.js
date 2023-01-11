@@ -8,7 +8,7 @@ const managerQuestions = [
     {
         type: "input",
         message: "Please enter the managers employee ID",
-        name: "ID"
+        name: "id"
     },
     {
         type: "input",
@@ -18,7 +18,7 @@ const managerQuestions = [
     {
         type: "input",
         message: "Please enter the managers office number",
-        name: "office"
+        name: "officeNumber"
     }
 ];
 const internQuestions = [
@@ -30,7 +30,7 @@ const internQuestions = [
     {
         type: "input",
         message: "Please enter the interns employee ID",
-        name: "ID"
+        name: "id"
     },
     {
         type: "input",
@@ -52,7 +52,7 @@ const engineerQuestions = [
     {
         type: "input",
         message: "Please enter the engineers employee ID",
-        name: "ID"
+        name: "id"
     },
     {
         type: "input",
