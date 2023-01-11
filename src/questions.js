@@ -1,4 +1,5 @@
-const managerQuestion = [
+//hosts all of the questions asked in the command line
+const managerQuestions = [
     {
         type: "input",
         message: "Please enter the managers name",
@@ -65,6 +66,6 @@ const engineerQuestions = [
     },
 ]
 module.exports = {
-    managerQuestion: managerQuestion,
+    managerQuestions: managerQuestions,
     internQuestions: internQuestions,
     engineerQuestions: engineerQuestions};
