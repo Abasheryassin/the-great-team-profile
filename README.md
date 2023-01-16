@@ -10,6 +10,10 @@ Just download the repository and type in node index.js to run the program. Follo
 
 ## Usage
 
+Down below is an example screenshot of a created webpage using this program as well as a demonstration video.
+
+[Team Builder (1).webm](https://user-images.githubusercontent.com/115291688/212772410-46f1b18f-64c9-4a08-8e6b-52031a154822.webm)
+
 ![alt text](assets/Team%20Profiler.png)
 
 ## License
